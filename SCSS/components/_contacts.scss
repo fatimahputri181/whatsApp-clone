@@ -1,0 +1,19 @@
+
+.contacts{
+    display: inline-block;
+    .user-profile{
+        background-color: rgb(7 94 84);
+        &-image{
+            padding: 1rem;
+            &-fatimah{
+                border-radius: 100%;
+                 width: 10%;
+                background-color: black;
+       
+        
+            }
+        }
+    }
+}
+
+

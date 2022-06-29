@@ -1,0 +1,46 @@
+*:before, *:after, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: rgb(21, 21, 21);
+}
+
+.chat-box {
+  display: inline-block;
+  background-color: bisque;
+}
+
+.contacts {
+  display: inline-block;
+}
+.contacts .user-profile {
+  background-color: rgb(7, 94, 84);
+}
+.contacts .user-profile-image {
+  padding: 1rem;
+}
+.contacts .user-profile-image-fatimah {
+  border-radius: 100%;
+  width: 10%;
+  background-color: black;
+}
+
+.icon {
+  color: rgb(226, 226, 226);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 2rem;
+}/*# sourceMappingURL=style.css.map */
