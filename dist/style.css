@@ -11,6 +11,8 @@ html {
 body {
   box-sizing: border-box;
   background-color: rgb(21, 21, 21);
+  color: rgb(226, 226, 226);
+  line-height: 1.4;
 }
 
 .chat-box {
@@ -20,22 +22,71 @@ body {
 
 .contacts {
   display: inline-block;
+  border-right: 0.4px solid rgba(226, 226, 226, 0.3);
 }
 .contacts .user-profile {
-  background-color: rgb(7, 94, 84);
+  background-color: rgb(14, 104, 94);
+  display: flex;
 }
 .contacts .user-profile-image {
   padding: 1rem;
 }
 .contacts .user-profile-image-fatimah {
   border-radius: 100%;
-  width: 10%;
+  width: 15%;
   background-color: black;
+}
+.contacts .user-profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.contacts .list-of-chats {
+  display: inline-block;
+}
+.contacts .list-of-chats-grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: rgb(5, 57, 51);
+  border-top: 0.4px solid rgba(226, 226, 226, 0.3);
+  border-bottom: 0.4px solid rgba(226, 226, 226, 0.3);
+}
+.contacts .list-of-chats-grid-text {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contacts .list-of-chats-flex-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .icon {
   color: rgb(226, 226, 226);
   font-size: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.search-bar {
+  padding: 1rem;
+  background-color: rgb(5, 57, 51);
+}
+.search-bar-sub {
+  width: 43rem;
+  border-radius: 1rem;
+  background-color: rgb(14, 104, 94);
+  outline: none;
+  border: none;
+  color: rgb(226, 226, 226);
+}
+
+.contact-images {
+  width: 8rem;
+  border-radius: 100%;
   padding: 1rem;
 }
 
@@ -43,4 +94,17 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   margin: 2rem;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  letter-spacing: 1.5;
+}
+
+.chat-lines {
+  font-size: 1.6rem;
+}
+
+.chat-times {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

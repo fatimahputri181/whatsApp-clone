@@ -1,18 +1,53 @@
+@use "../abstracts/variables" as u;
+
 
 .contacts{
     display: inline-block;
+    border-right: 0.4px solid rgba(u.$color-grey-light,0.3);
     .user-profile{
-        background-color: rgb(7 94 84);
+        background-color: u.$color-secondary-light;
+        display: flex;
         &-image{
             padding: 1rem;
             &-fatimah{
                 border-radius: 100%;
-                 width: 10%;
+                width: 15%;
                 background-color: black;
        
         
             }
         }
+        &-icon{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            padding: 1rem;
+        }
+    }
+
+    .list-of-chats{
+        display: inline-block;
+        &-grid{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            background-color: u.$color-secondary-dark;
+            border-top: 0.4px solid rgba(u.$color-grey-light,0.3);
+            border-bottom: 0.4px solid rgba(u.$color-grey-light,0.3);
+            
+            &-image{}
+            &-text{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        &-flex-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
     }
 }
 
