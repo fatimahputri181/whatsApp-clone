@@ -4,8 +4,10 @@
 .contacts{
     display: inline-block;
     border-right: 0.4px solid rgba(u.$color-grey-light,0.3);
+    background-position: left;
+    Overflow-y:scroll;
     .user-profile{
-        background-color: u.$color-secondary-light;
+        background-color: u.$color-primary-light;
         display: flex;
         &-image{
             padding: 1rem;
@@ -30,16 +32,23 @@
         &-grid{
             display: grid;
             grid-template-columns: 1fr 5fr;
-            background-color: u.$color-secondary-dark;
-            border-top: 0.4px solid rgba(u.$color-grey-light,0.3);
-            border-bottom: 0.4px solid rgba(u.$color-grey-light,0.3);
+            background-color: u.$color-primary-dark;
+          
             
-            &-image{}
+            &:hover{
+                background-color: u.$color-primary-light;
+                transition: all 0.2s ease-in-out;
+            }
+
+           
+          
             &-text{
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                border-top:0.4px solid rgba(u.$color-primary-light,0.6);
+                
             }
         }
         &-flex-text{
