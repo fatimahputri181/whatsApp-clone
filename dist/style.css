@@ -11,7 +11,6 @@ html {
 body {
   box-sizing: border-box;
   background-color: rgb(21, 21, 21);
-  color: rgb(226, 226, 226);
   line-height: 1.4;
 }
 
@@ -22,9 +21,7 @@ body {
 
 .contacts {
   display: inline-block;
-  border-right: 0.4px solid rgba(226, 226, 226, 0.3);
   background-position: left;
-  Overflow-y: scroll;
 }
 .contacts .user-profile {
   background-color: rgb(26, 68, 95);
@@ -46,14 +43,19 @@ body {
 }
 .contacts .list-of-chats {
   display: inline-block;
+  height: 56rem;
+  overflow-y: scroll;
 }
 .contacts .list-of-chats-grid {
   display: grid;
   grid-template-columns: 1fr 5fr;
   background-color: rgb(12, 39, 42);
 }
-.contacts .list-of-chats-grid:hover {
+.contacts .list-of-chats-grid:nth-child(2) {
   background-color: rgb(26, 68, 95);
+}
+.contacts .list-of-chats-grid:hover {
+  background-color: rgba(26, 68, 95, 0.6);
   transition: all 0.2s ease-in-out;
 }
 .contacts .list-of-chats-grid-text {
@@ -61,7 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 0.4px solid rgba(26, 68, 95, 0.6);
+  border-bottom: 0.4px solid rgba(26, 68, 95, 0.6);
 }
 .contacts .list-of-chats-flex-text {
   display: flex;
@@ -70,15 +72,28 @@ body {
 }
 
 .icon {
-  color: rgb(226, 226, 226);
+  color: rgb(195, 195, 195);
   font-size: 2rem;
   padding: 1rem;
   justify-content: center;
 }
 
+.chat-read-icon {
+  font-size: 2rem;
+  padding-right: 0.2rem;
+  color: rgb(90, 142, 226);
+}
+
+.chat-sent-icon {
+  font-size: 2rem;
+  padding-right: 0.2rem;
+  color: rgb(195, 195, 195);
+}
+
 .search-bar {
   padding: 1rem;
   background-color: rgb(12, 39, 42);
+  border-bottom: 0.4px solid rgba(26, 68, 95, 0.6);
 }
 .search-bar-sub {
   width: 43rem;
@@ -86,7 +101,7 @@ body {
   background-color: rgb(26, 68, 95);
   outline: none;
   border: none;
-  color: rgb(226, 226, 226);
+  color: rgb(195, 195, 195);
 }
 
 .contact-images {
@@ -101,15 +116,44 @@ body {
   margin: 2rem;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .heading-secondary {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 1.5;
+  color: #eee;
 }
 
 .chat-lines {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  color: rgb(195, 195, 195);
+}
+.chat-lines-unread {
+  color: #eee;
 }
 
 .chat-times {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: rgb(195, 195, 195);
+}
+
+.number {
+  font-size: 1.3rem;
+  color: rgb(21, 21, 21);
+  padding: 0.2rem 0.7rem;
+  border-radius: 100%;
+  background-color: rgb(11, 147, 106);
+}
+
+.sent-text {
+  display: flex;
+  align-items: center;
+}
+
+.chat-lines-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

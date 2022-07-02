@@ -4,6 +4,7 @@
 .search-bar{
     padding: 1rem;
     background-color: u.$color-primary-dark;
+    border-bottom:0.4px solid rgba(u.$color-primary-light,0.6);
     &-sub{
         width: 43rem;
         border-radius: 1rem;
@@ -11,6 +12,9 @@
         outline: none;
         border: none;
         color: u.$color-grey-light;
+
+        
+                
         
     }
 }
