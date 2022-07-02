@@ -54,7 +54,7 @@ body {
 .contacts .list-of-chats-grid:nth-child(2) {
   background-color: rgb(26, 68, 95);
 }
-.contacts .list-of-chats-grid:hover {
+.contacts .list-of-chats-grid:not(:nth-child(2)):hover {
   background-color: rgba(26, 68, 95, 0.6);
   transition: all 0.2s ease-in-out;
 }
@@ -85,8 +85,14 @@ body {
 }
 
 .chat-sent-icon {
-  font-size: 2rem;
-  padding-right: 0.2rem;
+  font-size: 1.8rem;
+  padding-right: 0.4rem;
+  color: rgb(195, 195, 195);
+}
+
+.chat-camera-icon, .chat-video-icon {
+  font-size: 1.8rem;
+  padding-right: 0.4rem;
   color: rgb(195, 195, 195);
 }
 

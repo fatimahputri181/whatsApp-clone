@@ -18,8 +18,15 @@
 }
 
 .chat-sent-icon{
-    font-size: 2rem;
-    padding-right: 0.2rem;
+    font-size: 1.8rem;
+    padding-right: 0.4rem;
+    color: u.$color-grey-light;
+
+}
+
+.chat-camera-icon, .chat-video-icon{
+    font-size: 1.8rem;
+    padding-right: 0.4rem;
     color: u.$color-grey-light;
 
 }
