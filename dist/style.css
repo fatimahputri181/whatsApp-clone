@@ -16,7 +16,20 @@ body {
 
 .chat-box {
   display: inline-block;
-  background-color: bisque;
+  border-left: 0.4px solid rgba(26, 68, 95, 0.6);
+}
+.chat-box .contact-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(26, 68, 95);
+  height: 6.8rem;
+}
+.chat-box .contact-profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .contacts {
@@ -24,16 +37,10 @@ body {
   background-position: left;
 }
 .contacts .user-profile {
-  background-color: rgb(26, 68, 95);
   display: flex;
-}
-.contacts .user-profile-image {
-  padding: 1rem;
-}
-.contacts .user-profile-image-fatimah {
-  border-radius: 100%;
-  width: 15%;
-  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(26, 68, 95);
 }
 .contacts .user-profile-icon {
   display: flex;
@@ -43,7 +50,7 @@ body {
 }
 .contacts .list-of-chats {
   display: inline-block;
-  height: 56rem;
+  height: 56.5rem;
   overflow-y: scroll;
 }
 .contacts .list-of-chats-grid {
@@ -64,6 +71,15 @@ body {
   flex-direction: column;
   justify-content: center;
   border-bottom: 0.4px solid rgba(26, 68, 95, 0.6);
+}
+.contacts .list-of-chats-grid-text .chat-lines-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts .list-of-chats-grid .sent-text {
+  display: flex;
+  align-items: center;
 }
 .contacts .list-of-chats-flex-text {
   display: flex;
@@ -110,16 +126,34 @@ body {
   color: rgb(195, 195, 195);
 }
 
+.user-profile-image {
+  padding: 1rem;
+}
+.user-profile-image-fatimah {
+  border-radius: 100%;
+  width: 4.34rem;
+  background-color: black;
+}
+
 .contact-images {
   width: 8rem;
   border-radius: 100%;
   padding: 1rem;
 }
 
+.contact-profile-img {
+  padding: 1rem;
+}
+.contact-profile-img-edward {
+  border-radius: 100%;
+  width: 4.34rem;
+  background-color: black;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 30% 70%;
-  margin: 2rem;
+  margin: 2rem 2rem 0 2rem;
 }
 
 body {
@@ -151,15 +185,4 @@ body {
   padding: 0.2rem 0.7rem;
   border-radius: 100%;
   background-color: rgb(11, 147, 106);
-}
-
-.sent-text {
-  display: flex;
-  align-items: center;
-}
-
-.chat-lines-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }/*# sourceMappingURL=style.css.map */

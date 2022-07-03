@@ -1,6 +1,10 @@
+@use "../abstracts/variables" as u;
+
 .chat-box{
     display: inline-block;
-    background-color: bisque;
+    border-left: 0.4px solid rgba(u.$color-primary-light,0.6);
+   
+  
     //.user-profile{
      //   &-image{
     //        &-edward{
@@ -8,4 +12,22 @@
     //        }
    //     }
  //   }
+
+ 
+.contact-profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: u.$color-primary-light;
+  height: 6.8rem;
+
+  &-icon{
+    display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+  }
+ 
+  
+}
 }

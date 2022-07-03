@@ -1,6 +1,27 @@
 
+.user-profile-image{
+    padding: 1rem;
+     &-fatimah{
+        border-radius: 100%;
+        width: 4.34rem;
+        background-color: black;
+   
+        }
+    }
+
 .contact-images{
     width: 8rem;
     border-radius: 100%;
     padding: 1rem;
 }
+
+.contact-profile-img{
+    padding: 1rem;
+    &-edward{
+        border-radius: 100%;
+        width: 4.34rem;
+        background-color: black;
+   
+        }
+
+    }
