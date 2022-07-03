@@ -5,7 +5,7 @@
     display: inline-block;
     
     background-position: left;
-   
+    
     .user-profile{
         display: flex;
         justify-content: space-between;
@@ -27,6 +27,7 @@
         overflow-y: scroll;
         &-grid{
             display: grid;
+            cursor: pointer;
             grid-template-columns: 1fr 5fr;
             background-color: u.$color-primary-dark;
             &:nth-child(2){

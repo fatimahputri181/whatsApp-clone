@@ -3,8 +3,15 @@
 .chat-box{
     display: inline-block;
     border-left: 0.4px solid rgba(u.$color-primary-light,0.6);
+    &-sub{
+      display: inline-block;
+      height: 55rem;
+      width: 100%;
+      background-image: url("../img/background-wallpaper.jpg");
+      background-size: cover;
+    }
    
-  
+   
     //.user-profile{
      //   &-image{
     //        &-edward{
@@ -13,7 +20,7 @@
    //     }
  //   }
 
- 
+
 .contact-profile{
   display: flex;
   justify-content: space-between;
@@ -23,11 +30,22 @@
 
   &-icon{
     display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
   }
  
   
 }
+
+ 
 }
+
+.text-input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.8rem;
+  background-color: u.$color-primary-light;
+  
+ }

@@ -5,6 +5,7 @@
     font-size: 2rem;
     padding: 1rem;
     justify-content: center;
+    cursor: pointer;
      
 }
 
@@ -26,5 +27,13 @@
     font-size: 1.8rem;
     padding-right: 0.4rem;
     color: u.$color-grey-light;
+
+}
+
+.icon-sticker, .icon-attachment, .icon-record{
+    color: u.$color-grey-light;
+    font-size: 2.8rem;
+    padding: 1rem;
+    justify-content: center;
 
 }
