@@ -20,10 +20,84 @@ body {
 }
 .chat-box-sub {
   display: inline-block;
+  overflow-y: scroll;
   height: 55rem;
   width: 100%;
   background-image: url("../img/background-wallpaper.jpg");
   background-size: cover;
+  position: relative;
+}
+.chat-box-sub-bubble-1 {
+  display: inline-block;
+  width: 44rem;
+  height: auto;
+  background-color: rgb(7, 113, 85);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  position: absolute;
+  margin: 5rem 10rem 0 5rem;
+}
+.chat-box-sub-bubble-1-a {
+  right: 0;
+}
+.chat-box-sub-bubble-1-b {
+  right: 0;
+  top: 20rem;
+}
+.chat-box-sub-bubble-1-c {
+  right: 0;
+  top: 40rem;
+}
+.chat-box-sub-bubble-1-d {
+  right: 0;
+  top: 60rem;
+  width: 22rem;
+}
+.chat-box-sub-bubble-1-e {
+  right: 0;
+  top: 65rem;
+  background-color: transparent;
+}
+.chat-box-sub-bubble-2 {
+  display: inline-block;
+  width: 44rem;
+  height: auto;
+  background-color: rgb(12, 39, 42);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  position: absolute;
+  top: 10rem;
+  margin: 5rem 0 5rem 5rem;
+}
+.chat-box-sub-bubble-2 .time {
+  display: inline-block;
+  padding-right: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+}
+.chat-box-sub-bubble-2-a {
+  left: 0;
+}
+.chat-box-sub-bubble-2-b {
+  left: 0;
+  top: 30rem;
+}
+.chat-box-sub-bubble-2-c {
+  left: 0;
+  top: 50rem;
+}
+.chat-box .chat-bubble-flex {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  right: 0;
+  bottom: -0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 0.8rem;
 }
 .chat-box .contact-profile {
   display: flex;
@@ -31,6 +105,10 @@ body {
   align-items: center;
   background-color: rgb(26, 68, 95);
   height: 6.8rem;
+}
+.chat-box .contact-profile-sub {
+  display: flex;
+  align-items: center;
 }
 .chat-box .contact-profile-icon {
   display: flex;
@@ -205,6 +283,10 @@ body {
   color: #eee;
 }
 
+.contact-name {
+  font-size: 1.4rem;
+}
+
 .chat-lines {
   font-size: 1.3rem;
   color: rgb(195, 195, 195);
@@ -224,4 +306,19 @@ body {
   padding: 0.2rem 0.7rem;
   border-radius: 100%;
   background-color: rgb(11, 147, 106);
+}
+
+.chat-box {
+  font-size: 1.3rem;
+  color: rgb(195, 195, 195);
+}
+
+.chat-bubble-flex {
+  font-size: 1.1rem;
+  color: rgb(185, 180, 180);
+}
+
+.time {
+  font-size: 1.1rem;
+  color: rgb(185, 180, 180);
 }/*# sourceMappingURL=style.css.map */

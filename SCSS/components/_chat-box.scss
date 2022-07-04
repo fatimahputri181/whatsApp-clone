@@ -5,12 +5,110 @@
     border-left: 0.4px solid rgba(u.$color-primary-light,0.6);
     &-sub{
       display: inline-block;
+      overflow-y: scroll;
+     
       height: 55rem;
       width: 100%;
       background-image: url("../img/background-wallpaper.jpg");
       background-size: cover;
+      position: relative;
+        &-bubble-1{
+          display: inline-block;
+          width: 44rem;
+          height: auto;
+          background-color: u.$color-primary-dark-2;
+          padding: 1rem;
+          border-radius: 1rem;
+          text-align: left;
+          position: absolute;
+         
+          margin: 5rem 10rem 0 5rem;
+          &-a{
+            right: 0;
+          }
+          &-b{
+            right: 0;
+            top: 20rem;
+          }
+
+          &-c{
+            right: 0;
+            top: 40rem;
+          }
+
+          &-d{
+            right: 0;
+            top: 60rem;
+            width: 22rem;
+          }
+          
+        &-e{
+          right: 0;
+          top: 65rem;
+         
+          background-color: transparent;
+          
+        }
+
+        }
+       
+        &-bubble-2{
+          display: inline-block;
+          width: 44rem;
+          height: auto;
+          background-color: u.$color-primary-dark;
+          padding: 1rem;
+          border-radius: 1rem;
+          text-align: left;
+          position: absolute;
+         
+          top: 10rem;
+          margin: 5rem 0 5rem 5rem;
+
+          .time{
+            display: inline-block;
+            padding-right: 1rem;
+            position: absolute;
+            right: 0;
+            bottom: 0.5rem;
+          }
+        
+
+        &-a{
+          left: 0;
+
+        }
+
+        &-b{
+          left: 0;
+          top: 30rem;
+        }
+
+        &-c{
+          left: 0;
+          top: 50rem;
+        }
+    
+    
+      }
     }
+    
+  
+
+   .chat-bubble-flex{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 0;
+    bottom: -0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0.8rem;
+
+    
+   }
    
+
    
     //.user-profile{
      //   &-image{
@@ -27,6 +125,11 @@
   align-items: center;
   background-color: u.$color-primary-light;
   height: 6.8rem;
+
+  &-sub{
+    display: flex;
+    align-items: center;
+  }
 
   &-icon{
     display: flex;

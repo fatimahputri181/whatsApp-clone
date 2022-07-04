@@ -11,6 +11,10 @@ body{
     color: u.$color-white;
 }
 
+.contact-name{
+    font-size: 1.4rem;
+}
+
 .chat-lines {
     font-size:1.3rem;
     color: u.$color-grey-light;
@@ -31,4 +35,20 @@ body{
     padding: 0.2rem 0.7rem;
     border-radius: 100%;
     background-color: u.$color-primary;
+}
+
+.chat-box{
+    font-size: 1.3rem;
+    color: u.$color-grey-light;
+}
+
+.chat-bubble-flex{
+    font-size: 1.1rem;
+    color: u.$color-grey-light-2;
+}
+
+.time{
+    font-size: 1.1rem;
+    color: u.$color-grey-light-2;
+
 }
