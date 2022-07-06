@@ -222,8 +222,8 @@ body {
 .icon-desktop-hidden {
   display: none;
   position: fixed;
-  right: 1rem;
-  bottom: 34rem;
+  right: 3%;
+  bottom: 35%;
 }
 .icon-desktop-hidden .icon-chat {
   background-color: rgb(11, 147, 106);
