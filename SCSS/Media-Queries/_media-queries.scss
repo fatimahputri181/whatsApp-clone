@@ -1,0 +1,203 @@
+@use "../abstracts/variables" as u;
+
+
+//Below 1200px/ Landscape Tablets
+
+@media (max-width:75em){
+
+    .chat-box-sub-bubble{
+        &-1{
+         margin: 5rem 7rem 0 5rem;
+           &-a, &-b, &-c{
+          width: 40rem;
+          height: auto;
+           } 
+           &-d{
+            width: 21rem;
+           }
+        }
+       
+
+        &-2{
+            margin: 5rem 5rem 0 7rem;
+            width: 40rem;
+            height: auto; 
+        }
+    }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .grid{
+
+   grid-template-columns: 40% 60%;}
+   
+   html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 58%;
+  }
+  .chat-box-sub-bubble{
+    &-1{
+     width: 35rem;
+    height: auto;
+     margin: 5rem 5rem 0 5rem;
+    
+       &-b{
+        
+        top: 28rem;
+       }
+        &-c{
+       top: 56rem;
+        }
+     
+      
+       &-d{
+        width: 21rem;
+        top: 84rem;
+       }
+       &-e{
+        right: 0;
+        top: 88rem;
+    
+        
+      }
+    } 
+       &-2{
+        margin: 5rem 5rem 0 5rem;
+        width: 35rem;
+        height: auto; 
+        &-a{
+            top: 14rem;
+        }
+        &-b{
+            top: 42rem;
+        }
+
+        &-c{
+            top: 70rem;
+        }
+    }
+    }
+   
+   
+}
+
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em){
+
+    .grid{
+
+        grid-template-columns: 45% 55%;}
+
+        .chat-box-sub-bubble{
+            &-1{
+             width: 24rem;
+             height: auto;
+             margin: 5rem 2rem 0 5rem;
+             
+               &-b{
+                
+                top: 36rem;
+               }
+                &-c{
+               top: 72rem;
+                }
+             
+              
+               &-d{
+                width: 21rem;
+                top: 108rem;
+               }
+               &-e{
+                right: 0;
+                top: 110rem;
+               
+               
+                
+              }
+            } 
+               &-2{
+                margin: 5rem 5rem 0 2rem;
+                width: 24rem;
+                height: auto; 
+                &-a{
+                    top: 18rem;
+                }
+                &-b{
+                    top: 54rem;
+                }
+        
+                &-c{
+                    top: 90rem;
+                }
+            }
+            }
+           
+}
+
+/**************************/
+/* BELOW 572px (Phones) */
+/**************************/
+
+@media (max-width: 36em){
+    .desktop-nav-hidden{
+       display: contents;
+    }
+
+    .search-bar{
+        display: none;
+    }
+
+    .mobile-nav-hidden{
+      
+        display: none;
+    }
+ 
+    .grid{
+        margin: 0;
+         grid-template-columns: 1fr 0;
+         padding-bottom: 10rem;
+         background-color: u.$color-primary-dark;
+        }
+
+    .chat-box{
+        overflow: hidden;
+
+        &-sub{
+            height: 60rem;
+        }
+       
+    }
+   
+    .list-of-chats{
+    
+       width: 100%;
+       display: block;
+       border: none; 
+       
+    }
+
+
+    .chat-times{
+        margin-right: 1rem;
+    }
+  
+
+    .contact-images{
+        width: 6.5rem;
+        padding: 0.5rem;
+    }
+    .number{
+        margin-right: 1rem;
+    }
+
+    .icon-desktop-hidden{
+        display: inline-block;
+    }
+}

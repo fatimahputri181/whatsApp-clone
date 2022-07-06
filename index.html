@@ -15,22 +15,58 @@
 <body>
 <div class="grid">
   <div class="contacts">
+    <div class="mobile-nav-hidden">
     <div class="user-profile">
       <div class="user-profile-image">
        <img src="img/fatimah.png" alt="user profile picture" class="user-profile-image-fatimah" />
       </div>
       <div class="user-profile-icon">
       <i class="icon icon-status">
-        <ion-icon name="sync-circle"></ion-icon>
+        <ion-icon name="sync-circle" class="icon-status-sub"></ion-icon>
       </i>
       <i class="icon icon-new-chat">
-       <ion-icon name="chatbox-ellipses"></ion-icon>
+       <ion-icon name="chatbox-ellipses" class="icon-new-chat-sub"></ion-icon>
       </i>
       <i class="icon icon-menu">
-        <ion-icon name="ellipsis-vertical"></ion-icon>
+        <ion-icon name="ellipsis-vertical" class="icon-menu-sub"></ion-icon>
       </i>
     </div>
    </div>
+  </div>
+
+  <div class="desktop-nav-hidden">
+    <div class="main-nav">
+      <div class="main-nav-grid-1">
+      <div class="name-of-app">
+      <h1 class="heading-primary">WhatsApp</h1>
+      </div>
+      <div class="icon-flex">
+      <i class="icon icon-search">
+        <ion-icon name="search-outline" class="icon-search-sub"></ion-icon>
+      </i>
+      <i class="icon icon-menu">
+        <ion-icon name="ellipsis-vertical" class="icon-menu-sub"></ion-icon>
+      </i>
+    </div>
+    </div>
+    <div class="main-nav-grid-2">
+      
+      <i class="icon icon-camera">
+        <ion-icon name="camera" class="icon-camera-sub"></ion-icon>
+      </i>
+
+
+      <h2 class="heading-secondary heading-secondary-desktop-nav heading-secondary-desktop-nav-1 ">Chats &nbsp;<span class="number">5</span></h2>
+      <h2 class="heading-secondary heading-secondary-desktop-nav heading-secondary-desktop-nav-2">Status</h2>
+      <h2 class="heading-secondary heading-secondary-desktop-nav heading-secondary-desktop-nav-3">Calls</h2>
+
+
+     
+    </div>
+
+   </div>
+  </div>
+
 
    <div class="search-bar">
     <input class="search-bar search-bar-sub" type="text" placeholder="Search or start a new chat">
@@ -230,10 +266,10 @@
     <div class="contact-profile-icon">
     
       <i class="icon icon-search">
-        <ion-icon name="search-outline"></ion-icon>
+        <ion-icon name="search-outline" class="icon-search-sub"></ion-icon>
       </i>
       <i class="icon icon-menu">
-        <ion-icon name="ellipsis-vertical"></ion-icon>
+        <ion-icon name="ellipsis-vertical" class="icon-menu-sub"></ion-icon>
       </i>
 
     </div>
@@ -312,10 +348,10 @@
     <div class="text-input">
         
         <i class="icon icon-sticker">
-          <ion-icon name="happy-outline"></ion-icon>
+          <ion-icon name="happy-outline" class="icon-sticker-sub"></ion-icon>
         </i>
         <i class="icon icon-attachment">
-          <ion-icon name="document-attach-outline"></ion-icon>
+          <ion-icon name="document-attach-outline" class="icon-attachment-sub"></ion-icon>
         </i>
   
 
@@ -324,10 +360,14 @@
        </div>
         
          <i class="icon icon-record">
-          <ion-icon name="mic"></ion-icon>
+          <ion-icon name="mic" class="icon-record-sub"></ion-icon>
          </i>
     </div>
   </div>
+</div>
+
+<div class="icon-desktop-hidden">
+  <ion-icon name="chatbubbles" class="icon icon-chat"></ion-icon>
 </div>
 
 </body>
